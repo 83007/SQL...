@@ -1,0 +1,17 @@
+import java.io.*;
+class Search {
+   public static int linearSearch(int arr[],int n,int target)
+   {for(int i=0;i<n;i++){
+       if(arr[i]==target)return arr[i];
+   }
+   return -1;
+    }
+    public static void main(String args[])
+    {
+        int arr[]={2,7,4,9,3,5};
+        int target=8;
+        int result=linearSearch(arr,arr.length,target);
+        if(result==-1)System.out.println("not found");
+        else System.out.println("element is present at index "+result);
+    }
+}
